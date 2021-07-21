@@ -7,11 +7,116 @@
     <title>Figura geométricas | Curso Práctico de JS</title>
 </head>
 <body>
+    <header>
     <h1>
         Figuras geométricas
     </h1>
+    <p></p>
+</header>
+<section>
+    <h2>Calcula el área y perímetro de un cuadrado </h2>
+    <form action="">
+        <label for="InputCuadrado">
+            Escribe cuánto mide cada lado de tú cuadrado            
+        </label> <!--*EL atributo for nos sirve para tener la relación entre el label y el input y debe de ser idéntico que el id-->
+        <input id="InputCuadrado" type="number"> <!--*EL atributo id es un identificador unico para dos cosas: 1.- conectar el label con el for 2.- Al dar click se conecta con el for-->
+        <button type="button" onclick= calcularPerimetroCuadrado()> <!--*se llama a la función-->
+                Calcular el perímetro 
+        </button>
+        <button  type="button" onclick=calcularAreaCuadrado()>
+                Calcular el área
+        </button>
+    </form>
+</section>
+<section>
+<form>
 
-    <script src="./funcionesFiguras.js"></script>
+<h2>Calcula el perímetro de un Triangulo </h2>
+<form >
+
+    <label for="Input1">
+        Escribe cuánto miden el lado 1            
+    </label> 
+    <input id="Input1" type="number">
+    <br> 
+    
+    <label for="Input2">
+        Escribe cuánto miden el lado 2            
+    </label> 
+    <input id="Input2" type="number">
+    <br>
+    
+    <label for="Base">
+        Escribe cuánto miden la base            
+    </label> 
+    <input id="Base" type="number">
+    
+    <button type="button" onclick= calcularPerimetroTriangulo()> 
+            Calcular el perímetro 
+    </button>
+</form>
+</section>
+
+<section>
+ <h2>Calcula el área del Triánglo</h2>
+
+ <label for="baseTriangulo">
+    Escribe la base del triángulo
+ </label>
+ <input id="baseTriangulo" type="number">
+ <br>
+    <label for="altura">
+        
+        Escribe la alatura del triángulo
+    </label>
+    <input id="altura" type="number">
+    <button type="button" onclick=calcularAreaTriangulo() >
+        Calcula el área del triangulo
+    </button>
+</section>
+
+<section>
+    <h2>Calcula el perimetro del circulo</h2>
+    <label for="radio">
+        Escribe cuánto mide el radio
+    </label>
+    <input id= "radio" type="number">
+    <button type="button" onclick= calcularPerimetroCirculo()> 
+        Calcular el perimetro del circulo</button>
+</section>
+
+<section>
+    <h2>Calcula el área del circulo</h2>
+    <label for="ratio">
+        Escribe cuánto mide el radio
+    </label>
+    <input id= "ratio" type="number">
+    <button type="button" onclick= calcularAreaCirculo()> 
+        Calcular el área del circulo</button>
+
+    </section>
+
+    <section>
+        <h2>Calcula la altura del triángulo isósceles</h2>
+        <label for="cateto_a">
+            Escribe el lado a
+        </label>
+        <input id="cateto_a" type="number">
+        <br>
+        <label for="cateto_b">
+            Escribe le lado b 
+        </label>
+        <input id="cateto_b" type="number">
+        <br>
+        <label for="cateto_c">
+            Escribe la base 
+        </label>
+        <input id="cateto_c"type="number">
+        <button type="button" onclick= calculaAlturaIsosceles() >
+            Calcular la altura del Isósceles
+        </button>
+    </section>
+<script src="./funcionesFiguras.js"></script>
 
 </body>
 </html>
